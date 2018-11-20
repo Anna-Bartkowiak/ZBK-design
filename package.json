@@ -1,0 +1,21 @@
+{
+  "name": "zbk",
+  "version": "1.0.0",
+  "description": "Website for Interior decorator",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "author": "AnnCode",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "concat": "^1.0.3",
+    "node-sass": "^4.10.0",
+    "npm-run-all": "^4.1.3",
+    "postcss-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "npm": "^6.4.1"
+  }
+}
