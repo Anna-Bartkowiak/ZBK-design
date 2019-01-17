@@ -1,19 +1,34 @@
-body {
+/* body {
     margin: 0 auto;
-}
+} */
 
 .container {
-    max-width: 1400px;;
+    max-width: 1364px;
+    padding: 0;
+}
+
+[class*="col-"] {
+	padding: 0;
 }
 
 nav {
-    margin: 15px auto;
+    margin: 0 auto;
+}
+
+.navbar {
+    padding: .5rem 0;
+}
+
+.navbar-brand {
+    margin-right: 4.5rem;
 }
 
 .jumbotron {
-    background: url(../img/Bitmap\ Copy.jpg) center center no-repeat;
     height: 33.5rem;
     position: relative;
+    padding: 0 2rem 0 2rem;
+    margin-bottom: 7rem;
+    background: url(../img/flat_35m_img1.jpg) center center no-repeat;
 }
 
 .jumbotron__heading {
@@ -27,10 +42,12 @@ nav {
   
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     
     grid-template-areas: ". . dom1 dom1 dom1 dom1 dom1 . dom2 dom2 dom2 dom2"
                          ". dom3 dom3 dom3 dom3 dom3  . . dom2 dom2 dom2 dom2";
+
+    grid-gap: 40px;
 }
 
 .project__dom1 {
@@ -39,10 +56,12 @@ nav {
 
 .project__dom2 {
     grid-area: dom2;
+    margin-top: 150px;
 }
 
 .project__dom3 {
     grid-area: dom3;
+    margin-top: 16px;
 }
 
 .valuation__heading {
