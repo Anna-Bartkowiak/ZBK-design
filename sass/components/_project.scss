@@ -1,26 +1,56 @@
-.project__grid {
-    margin: 30px auto;
-  
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(12, 1fr);
+.project {
+    &__grid {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(12, 1fr);
+        
+        grid-template-areas: ". . dom1 dom1 dom1 dom1 dom1 . dom2 dom2 dom2 dom2"
+                            ". dom3 dom3 dom3 dom3 dom3  . . dom2 dom2 dom2 dom2";
+
+        grid-gap: 40px;
+    }
+
+    &__dom {
+        position: relative;
+
+        &--1 {
+            grid-area: dom1;
+            margin-left: 1.5rem;
+        }
     
-    grid-template-areas: ". . dom1 dom1 dom1 dom1 dom1 . dom2 dom2 dom2 dom2"
-                         ". dom3 dom3 dom3 dom3 dom3  . . dom2 dom2 dom2 dom2";
+        &--2 {
+            grid-area: dom2;
+            margin-top: 130px;
+            margin-left: -.7rem;
+        }
+    
+        &--3 {
+            grid-area: dom3;
+            margin-top: 16px;
+        }
+    }
 
-    grid-gap: 40px;
-}
+    & span {
+        background-color: $color-yellow-light;
+        color: $color-grey-dark;
+    }
 
-.project__dom1 {
-    grid-area: dom1;
-}
+    &__btn-position {
+        position: absolute !important;
 
-.project__dom2 {
-    grid-area: dom2;
-    margin-top: 150px;
-}
+        &--1 {
+            bottom: 4.2rem;
+            right: 11.5rem;
+        }
 
-.project__dom3 {
-    grid-area: dom3;
-    margin-top: 16px;
+        &--2 {
+            bottom: 2.2rem;
+            right: 7rem;
+        }
+
+        &--3 {
+            bottom: 1.5rem;
+            left: 13rem;
+        }
+    }
 }

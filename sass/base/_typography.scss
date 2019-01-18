@@ -1,6 +1,25 @@
 body {
-    font-family: 'Unica One', cursive;
+    font-family: 'Oswald', sans-serif;
     color: $color-grey-dark;
+    font-weight: 300;
+}
+
+a {
+    color: $color-grey-dark;
+
+    &:hover {
+        color: $color-grayish-red;
+    }
+}
+
+.heading__3 {
+    color: $color-yellow-light;
+    font-size: 30px;
+    font-weight: 300;
+
+    &--bold {
+        font-weight: 700;
+    }
 }
 
 .heading-primary {
@@ -20,10 +39,10 @@ body {
         animation-duration: 1s;
         animation-timing-function: ease-out;
 
-        @include respond(phone) {
-            letter-spacing: 1rem;
-            font-size: 5rem;
-        }
+        // @include respond(phone) {
+        //     letter-spacing: 1rem;
+        //     font-size: 5rem;
+        // }
     
         /*
         animation-iteration-count: 3;
@@ -38,8 +57,8 @@ body {
         letter-spacing: 1.75rem;
         animation: moveInRight 1s ease-out;
 
-        @include respond(phone) {
-            letter-spacing: .5rem;
-        }
+        // @include respond(phone) {
+        //     letter-spacing: .5rem;
+        // }
     }
 }
