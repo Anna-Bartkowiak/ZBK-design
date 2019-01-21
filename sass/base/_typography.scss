@@ -2,6 +2,7 @@ body {
     font-family: 'Oswald', sans-serif;
     color: $color-grey-dark;
     font-weight: 300;
+    letter-spacing: $letter-spacing-small;
 }
 
 a {
@@ -12,53 +13,36 @@ a {
     }
 }
 
-.heading__3 {
-    color: $color-yellow-light;
-    font-size: 30px;
-    font-weight: 300;
-
-    &--bold {
-        font-weight: 700;
-    }
-}
-
 .heading-primary {
-    color: $color-white;
-    text-transform: uppercase;
-
-    backface-visibility: hidden;
-    margin-bottom: 6rem;
-
-    &--main {
-        display: block;
-        font-size: 6rem;
-        font-weight: 400;
-        letter-spacing: 3.5rem;
+    font-size: 2.25rem;
+    font-weight: 300;
+    letter-spacing: $letter-spacing-medium;
+    color: $color-grey-dark;
     
-        animation-name: moveInLeft;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
-
-        // @include respond(phone) {
-        //     letter-spacing: 1rem;
-        //     font-size: 5rem;
-        // }
-    
-        /*
-        animation-iteration-count: 3;
-        animation-delay: 3s;
-        */
-    }
-    
-    &--sub {
-        display: block;
-        font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: 1.75rem;
-        animation: moveInRight 1s ease-out;
-
+    &--yellow {
+        color: $color-yellow-light;
+        font-weight: 300;
+        line-height: 1;
         // @include respond(phone) {
         //     letter-spacing: .5rem;
         // }
+    }
+
+    &--bold {
+        font-weight: 700;
+        background-color: $color-yellow-light;
+        color: $color-grey-dark;
+    }
+
+    &--grayish-red {
+        padding: 1rem;
+        line-height: 1.5;
+        text-align: center;
+        color: $color-grayish-red;
+
+        position: absolute;
+        top: -4.4rem;
+        left: 7.5rem;
+        right: 7.5rem;
     }
 }

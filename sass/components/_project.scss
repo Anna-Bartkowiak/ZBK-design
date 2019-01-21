@@ -30,27 +30,45 @@
         }
     }
 
-    & span {
-        background-color: $color-yellow-light;
-        color: $color-grey-dark;
-    }
-
     &__btn-position {
         position: absolute !important;
 
         &--1 {
-            bottom: 4.2rem;
+            bottom: 3.75rem;
             right: 11.5rem;
         }
 
         &--2 {
-            bottom: 2.2rem;
+            bottom: 1.55rem;
             right: 7rem;
         }
 
         &--3 {
-            bottom: 1.5rem;
+            bottom: 1rem;
             left: 13rem;
         }
+    }
+
+    &__icon {
+        position: relative;
+        // margin-top: 3.5rem;
+
+        &,
+        &::before{
+            width: 1.5rem;
+            height: 2px;
+            background-color: $color-grey-dark;
+            display: inline-block;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all .2s;
+        }
+
+        &::before { top: 0; transform: rotate(90deg) }
+        & { top: .8rem; }
     }
 }
