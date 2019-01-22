@@ -5,8 +5,9 @@ body {
     letter-spacing: $letter-spacing-small;
 }
 
-a {
+.a-link {
     color: $color-grey-dark;
+    text-decoration: underline;
 
     &:hover {
         color: $color-grayish-red;
@@ -23,6 +24,7 @@ a {
         color: $color-yellow-light;
         font-weight: 300;
         line-height: 1;
+        position: relative;
         // @include respond(phone) {
         //     letter-spacing: .5rem;
         // }
@@ -30,8 +32,10 @@ a {
 
     &--bold {
         font-weight: 700;
-        background-color: $color-yellow-light;
         color: $color-grey-dark;
+        padding: 0 1rem;
+        position: absolute;
+        bottom: -0.9rem;
     }
 
     &--grayish-red {
@@ -41,8 +45,33 @@ a {
         color: $color-grayish-red;
 
         position: absolute;
-        top: -4.4rem;
+        top: -5.4rem;
         left: 7.5rem;
         right: 7.5rem;
     }
 }
+
+.heading-secondary {
+    font-family: 'Unica One', cursive;
+    color: $color-grey-dark;
+
+    &--small {
+        font-size: 1.25rem;
+    }
+
+    &--big {
+        font-size: 1.875rem;
+    }
+}
+
+// .heading-secondary {
+//     font-family: 'Unica One', cursive;
+//     font-size: 1.875rem;
+//     color: $color-grey-dark;
+// }
+
+// .heading-tertiary {
+//     font-family: 'Unica One', cursive;
+//     font-size: 1.25rem;
+//     color: $color-grey-dark;
+// }

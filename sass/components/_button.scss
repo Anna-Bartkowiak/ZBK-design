@@ -2,8 +2,6 @@
     &,
     &:link,
     &:visited {
-        text-decoration: none;
-        // padding: .5rem 1rem;
         display: inline-block;
         border-radius: 0;
         transition: all .2s;
@@ -13,9 +11,14 @@
         background-color: $color-white;
         color: $color-grey-dark;
 
-        //Change for the <button> element
         border: none;
         cursor: pointer;
+
+        &:active,
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 .5rem rgba($color-black, .1);
+        }
     }
 
     &--white {
@@ -28,7 +31,7 @@
         &:active,
         &:focus {
             outline: none;
-            // box-shadow: 0 .1rem .2rem rgba($color-black, .2);
+            box-shadow: 0 .1rem .2rem rgba($color-black, .2);
         }
 
         &:hover {
