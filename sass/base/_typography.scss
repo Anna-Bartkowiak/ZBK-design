@@ -8,6 +8,7 @@ body {
 .a-link {
     color: $color-grey-dark;
     text-decoration: underline;
+    transition: all .1s;
 
     &:hover {
         color: $color-grayish-red;

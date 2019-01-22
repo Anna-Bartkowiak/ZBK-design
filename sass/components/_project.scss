@@ -35,17 +35,20 @@
 
         &--1 {
             bottom: 4.6rem;
-            right: 11.5rem;
+            right: 10.5rem;
+            z-index: 10;
         }
 
         &--2 {
             bottom: 3.55rem;
-            right: 6.5rem;
+            right: 5.5rem;
+            z-index: 10;
         }
 
         &--3 {
             bottom: 1.8rem;
             left: 13rem;
+            z-index: 10;
         }
     }
 

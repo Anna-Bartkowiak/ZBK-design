@@ -1,9 +1,18 @@
 .footer {
-    background-color: $color-grey;
+    background-color: $color-grayish-red;
     // padding: 1rem 0;
     font-size: 0.875rem;
-    color: $color-grey-light;
-    // text-align: center;
+    color: $color-grey-dark;
+    
+    &__a-link {
+        color: $color-grey-dark;
+        text-decoration: underline;
+        transition: all .1s;
+
+        &:hover {
+            color: $color-grey;
+        }
+    }
 
     // &__paragraph {
     //     margin: 0;

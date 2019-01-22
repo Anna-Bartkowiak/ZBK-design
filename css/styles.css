@@ -3,7 +3,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: border-box; }
 
 html {
   scroll-behavior: smooth; }
@@ -20,7 +20,8 @@ body {
 
 .a-link {
   color: #6D6D6D;
-  text-decoration: underline; }
+  text-decoration: underline;
+  transition: all .1s; }
   .a-link:hover {
     color: #2B2220; }
 
@@ -67,7 +68,6 @@ body {
   font-size: 1.125rem;
   background-color: #fff;
   color: #6D6D6D;
-  border: none;
   cursor: pointer; }
   .btn:active, .btn:focus, .btn:link:active, .btn:link:focus, .btn:visited:active, .btn:visited:focus {
     outline: none;
@@ -87,20 +87,9 @@ body {
     box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2); }
 
 .btn--gradient {
-  background-image: linear-gradient(to right, #D7B975, #c69b3a);
+  position: relative;
+  background-image: linear-gradient(to right, #D7B975 0%, #cfae60 50%, #c69b3a 100%);
   color: #fff !important; }
-
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all .4s; }
 
 .form-control {
   width: 92%;
@@ -131,13 +120,16 @@ body {
   position: absolute !important; }
   .project__btn-position--1 {
     bottom: 4.6rem;
-    right: 11.5rem; }
+    right: 10.5rem;
+    z-index: 10; }
   .project__btn-position--2 {
     bottom: 3.55rem;
-    right: 6.5rem; }
+    right: 5.5rem;
+    z-index: 10; }
   .project__btn-position--3 {
     bottom: 1.8rem;
-    left: 13rem; }
+    left: 13rem;
+    z-index: 10; }
 
 .project__icon {
   position: relative; }
@@ -179,9 +171,15 @@ body {
   right: 7.5rem; }
 
 .footer {
-  background-color: #979797;
+  background-color: #2B2220;
   font-size: 0.875rem;
-  color: #D8D8D8; }
+  color: #6D6D6D; }
+  .footer__a-link {
+    color: #6D6D6D;
+    text-decoration: underline;
+    transition: all .1s; }
+    .footer__a-link:hover {
+      color: #979797; }
 
 [class^="col-"] {
   padding: 0; }
@@ -206,6 +204,24 @@ body {
     padding: .3rem 1rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
+
+nav {
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative; }
+  nav .nav-link:after {
+    position: absolute;
+    transition: .3s;
+    content: '';
+    width: 0;
+    right: 0;
+    left: auto;
+    bottom: 0;
+    height: 2px;
+    background: #6D6D6D; }
+  nav .nav-link:hover:after {
+    width: 100%;
+    left: 0; }
 
 ul {
   font-family: 'Unica One', cursive; }

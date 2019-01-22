@@ -1,6 +1,30 @@
-// nav {
-//     margin: 0 auto;
-// }
+nav {
+    margin: 0 auto;
+    background-color: $color-white;
+    position: relative;
+
+    .nav-link {
+        &:after {
+            position: absolute;
+            transition: .3s;
+            content: '';
+            width: 0;
+            right: 0;
+            left: auto;
+            bottom: 0;
+            height: 2px;
+            background: $color-grey-dark;
+        }
+        
+        &:hover {
+            
+            &:after {
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
+}
 
 ul {
     font-family: 'Unica One', cursive;
