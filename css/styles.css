@@ -62,13 +62,13 @@ body {
 .btn, .btn:link, .btn:visited {
   display: inline-block;
   border-radius: 0;
-  transition: all .2s;
   position: relative;
   font-weight: 300;
   font-size: 1.125rem;
   background-color: #fff;
   color: #6D6D6D;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all .3s; }
   .btn:active, .btn:focus, .btn:link:active, .btn:link:focus, .btn:visited:active, .btn:visited:focus {
     outline: none;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1); }
@@ -88,8 +88,18 @@ body {
 
 .btn--gradient {
   position: relative;
-  background-image: linear-gradient(to right, #D7B975 0%, #cfae60 50%, #c69b3a 100%);
-  color: #fff !important; }
+  background-color: #cfae60;
+  color: #fff !important;
+  transition: all .3s;
+  transform: scale(1); }
+  .btn--gradient span {
+    margin-left: .3rem;
+    transition: margin-left .3s; }
+  .btn--gradient:hover {
+    background-color: #c08d17;
+    transform: scale(1.03); }
+    .btn--gradient:hover span {
+      margin-left: .7rem; }
 
 .form-control {
   width: 92%;
@@ -207,27 +217,29 @@ body {
 
 nav {
   margin: 0 auto;
-  background-color: #fff;
-  position: relative; }
-  nav .nav-link:after {
-    position: absolute;
-    transition: .3s;
-    content: '';
-    width: 0;
-    right: 0;
-    left: auto;
-    bottom: 0;
-    height: 2px;
-    background: #6D6D6D; }
-  nav .nav-link:hover:after {
-    width: 100%;
-    left: 0; }
+  background-color: #fff; }
+  nav .nav-link {
+    position: relative; }
+    nav .nav-link:after {
+      position: absolute;
+      transition: .3s;
+      content: '';
+      width: 0;
+      right: 0;
+      left: auto;
+      bottom: 0;
+      height: 1px;
+      background: #6D6D6D; }
+    nav .nav-link:hover:after {
+      width: 100%;
+      left: 0; }
 
 ul {
   font-family: 'Unica One', cursive; }
 
 .nav-link {
-  text-decoration: none; }
+  text-decoration: none;
+  padding: .3rem 0 .3rem 0 !important; }
 
 .container {
   max-width: 1364px; }

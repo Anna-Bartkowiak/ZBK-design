@@ -1,9 +1,9 @@
 nav {
     margin: 0 auto;
     background-color: $color-white;
-    position: relative;
 
     .nav-link {
+        position: relative;
         &:after {
             position: absolute;
             transition: .3s;
@@ -12,7 +12,7 @@ nav {
             right: 0;
             left: auto;
             bottom: 0;
-            height: 2px;
+            height: 1px;
             background: $color-grey-dark;
         }
         
@@ -24,6 +24,7 @@ nav {
             }
         }
     }
+    
 }
 
 ul {
@@ -40,4 +41,5 @@ ul {
 
 .nav-link {
     text-decoration: none;
+    padding: .3rem 0 .3rem 0 !important;
 }
