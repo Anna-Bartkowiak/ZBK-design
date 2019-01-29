@@ -1,3 +1,23 @@
+/*
+0 - 575.98px:       Phone portrait
+576px - 767.98px:   Phone landscape
+768px - 991.98px;   Tablet portrait
+992px - 1199.98px;  Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800 + :        Big desktop
+
+Breakpoint argument choices:
+- phone-port
+- phone-land
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: base + typography > general layout + grid > page layout > components
+
+1em = 16px
+1rem = 16px
+*/
 *,
 *::after,
 *::before {
@@ -7,6 +27,18 @@
 
 html {
   scroll-behavior: smooth; }
+  @media only screen and (max-width: 1199.98px) {
+    html {
+      font-size: 75%; } }
+  @media only screen and (max-width: 991.98px) {
+    html {
+      font-size: 62.5%; } }
+  @media only screen and (max-width: 767.98px) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 575.98px) {
+    html {
+      font-size: 50%; } }
 
 ::selection {
   background-color: #D7B975;
@@ -120,8 +152,7 @@ body {
     margin-left: 1.5rem; }
   .project__dom--2 {
     grid-area: dom2;
-    margin-top: 130px;
-    margin-left: -.7rem; }
+    margin-top: 130px; }
   .project__dom--3 {
     grid-area: dom3;
     margin-top: 16px; }
@@ -129,17 +160,23 @@ body {
 .project__btn-position {
   position: absolute !important; }
   .project__btn-position--1 {
-    bottom: 4.6rem;
-    right: 10.5rem;
-    z-index: 10; }
-  .project__btn-position--2 {
-    bottom: 3.55rem;
+    bottom: 4.3rem;
     right: 5.5rem;
     z-index: 10; }
-  .project__btn-position--3 {
-    bottom: 1.8rem;
-    left: 13rem;
+    @media only screen and (max-width: 1199.98px) {
+      .project__btn-position--1 {
+        bottom: 5.5rem; } }
+  .project__btn-position--2 {
+    bottom: 2rem;
+    right: 2rem;
     z-index: 10; }
+  .project__btn-position--3 {
+    bottom: 2rem;
+    left: 22rem;
+    z-index: 10; }
+    @media only screen and (max-width: 1199.98px) {
+      .project__btn-position--3 {
+        bottom: 3rem; } }
 
 .project__icon {
   position: relative; }
@@ -166,6 +203,10 @@ body {
   position: absolute;
   left: 10.35rem;
   margin-top: .22rem; }
+  @media only screen and (max-width: 1199.98px) {
+    .project__heading-background {
+      height: 23px;
+      margin-top: .15rem; } }
   .project__heading-background--house {
     left: 3.8rem;
     width: 9rem; }

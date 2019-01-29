@@ -8,19 +8,42 @@
 
 html {
     scroll-behavior: smooth;
-    // This defines what 1rem is.
-    // font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
+    // font-size: 100%; // 16px = 100%
 
-    // @include respond(tab-land) {  //width < 1200?
+    // Large devices (desktops, 992px and up)
+    @media only screen and (max-width: 1199.98px) { 
+        font-size: 75%; //1rem = 12, 12/16 = 75%
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @media only screen and (max-width: 991.98px) { 
+        font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
+    }
+
+    // Small devices (landscape phones, 576px and up)
+    @media only screen and (max-width: 767.98px) {
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 56.25%
+    }
+
+    //Extra small devices (portrait phones, less than 576px)
+    @media only screen and (max-width: 575.98px) { 
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+
+    // @include respond(tab-land) {  //width < 1200
+    //     font-size: 75%; //1rem = 12, 12/16 = 75%
+    // }
+
+    // @include respond(tab-port) {  //width < 992
+    //     font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
+    // }
+
+    // @include respond(phone-land) {  //width < 768
     //     font-size: 56.25%; //1 rem = 9px, 9/16 = 56.25%
     // }
 
-    // @include respond(tab-port) {  //width < 900?
+    // @include respond(phone-port) {  //width < 576
     //     font-size: 50%; //1 rem = 8px, 8/16 = 50%
-    // }
-
-    // @include respond(big-desktop) {
-    //     font-size: 75%; //1rem = 12, 12/16 = 75%
     // }
 }
 

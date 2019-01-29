@@ -50,6 +50,10 @@
         transition: all .3s;
         transform: scale(1);
 
+        // @include respond(tab-land) {  //width < 1200
+        //     margin-left: 0;
+        // }
+
         & span {
             margin-left: .3rem;
             transition: margin-left .3s;
