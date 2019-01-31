@@ -49,6 +49,12 @@ body {
         top: -5.4rem;
         left: 7.5rem;
         right: 7.5rem;
+
+
+        @include respond(phone-port) {  //width < 576
+            position: static;
+            // padding: 1rem 3rem;
+        }
     }
 }
 
@@ -58,6 +64,10 @@ body {
 
     &--small {
         font-size: 1.25rem;
+
+        @include respond(phone-port) {  //width < 576
+            text-align: center;
+        }
     }
 
     &--big {

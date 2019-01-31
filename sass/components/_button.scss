@@ -50,9 +50,9 @@
         transition: all .3s;
         transform: scale(1);
 
-        // @include respond(tab-land) {  //width < 1200
-        //     margin-left: 0;
-        // }
+        @include respond(phone-land) {  //width < 768
+            line-height: 2.5;
+        }
 
         & span {
             margin-left: .3rem;
@@ -73,32 +73,13 @@
         }
     }
 
-    // &--green {
-    //     background-color: $color-primary;
-    //     color: $color-white;
-         
-    //     &::after {
-    //         background-color: $color-primary;
-    //     }
-    // }
-    
-    // &::after {
-    //     content: "";
-    //     display: inline-block;
-    //     height: 100%;
-    //     width: 100%;
-    //     border-radius: 0;
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     z-index: -1;
-    //     transition: all .4s;
-    // }
-    
-    // &--animated {
-    //     animation: moveInBottom .5s ease-out .75s;
-    //     animation-fill-mode: backwards;
-    // }
+    &--form {
+
+        @include respond(phone-land) {  //width < 768
+            padding-left: 8rem!important;
+            padding-right: 8rem!important;
+        }
+    }
 }
 
 // .btn-text {

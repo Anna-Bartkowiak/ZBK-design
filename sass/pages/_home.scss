@@ -1,7 +1,31 @@
 .container {
     max-width: 1364px;
+
+    @include respond(phone-port) {  //width < 576
+        padding: 0;
+    }
 }
 
-.contact__link {
+.contact {
+    &__link {
     line-height: 2.5;
+    }
+
+    &__info {
+        @include respond(phone-port) {  //width < 576
+            text-align: center;
+        }
+    }
+
+    // &__btn {
+    //     @include respond(phone-port) {  //width < 576
+    //         width: 75%;
+    //     }
+    // }
+}
+
+.row {
+    @include respond(phone-port) {  //width < 576
+        margin: 0;
+    }
 }

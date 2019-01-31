@@ -2,8 +2,19 @@ nav {
     margin: 0 auto;
     background-color: $color-white;
 
+    .navbar-nav {
+        font-family: 'Unica One', cursive;
+    }
+
     .nav-link {
         position: relative;
+        padding: .3rem 0 .3rem 0 !important;
+        // text-decoration: none;
+
+        @include respond(phone-port) {  //width < 576
+            padding: 2rem 0 2rem 0 !important;
+        }
+
         &:after {
             position: absolute;
             transition: .3s;
@@ -27,9 +38,9 @@ nav {
     
 }
 
-ul {
-    font-family: 'Unica One', cursive;
-}
+// ul {
+//     font-family: 'Unica One', cursive;
+// }
 
 // .navbar {
 //     padding: .5rem 0;
@@ -39,7 +50,11 @@ ul {
 //     margin-right: 4.5rem;
 // }
 
-.nav-link {
-    text-decoration: none;
-    padding: .3rem 0 .3rem 0 !important;
-}
+// .nav-link {
+//     text-decoration: none;
+//     padding: .3rem 0 .3rem 0 !important;
+
+//     @include respond(phone-port) {  //width < 576
+//         padding: 2rem 0 2rem 0 !important;
+//     }
+// }

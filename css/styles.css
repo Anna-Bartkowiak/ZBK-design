@@ -82,12 +82,18 @@ body {
     top: -5.4rem;
     left: 7.5rem;
     right: 7.5rem; }
+    @media only screen and (max-width: 575.98px) {
+      .heading-primary--grayish-red {
+        position: static; } }
 
 .heading-secondary {
   font-family: 'Unica One', cursive;
   color: #6D6D6D; }
   .heading-secondary--small {
     font-size: 1.25rem; }
+    @media only screen and (max-width: 575.98px) {
+      .heading-secondary--small {
+        text-align: center; } }
   .heading-secondary--big {
     font-size: 1.875rem; }
 
@@ -124,6 +130,9 @@ body {
   color: #fff !important;
   transition: all .3s;
   transform: scale(1); }
+  @media only screen and (max-width: 767.98px) {
+    .btn--gradient {
+      line-height: 2.5; } }
   .btn--gradient span {
     margin-left: .3rem;
     transition: margin-left .3s; }
@@ -133,50 +142,108 @@ body {
     .btn--gradient:hover span {
       margin-left: .7rem; }
 
+@media only screen and (max-width: 767.98px) {
+  .btn--form {
+    padding-left: 8rem !important;
+    padding-right: 8rem !important; } }
+
+@media only screen and (max-width: 575.98px) {
+  .form-group {
+    width: 75%;
+    margin: 0 auto 2rem auto; } }
+
 .form-control {
   width: 92%;
   font-size: .875rem;
   padding: .25rem .625rem; }
+  @media only screen and (max-width: 575.98px) {
+    .form-control {
+      width: 100%;
+      margin: 0 auto;
+      padding: 1.5rem 0.625rem; } }
 
 .project__grid {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(12, 1fr);
   grid-template-areas: ". . dom1 dom1 dom1 dom1 dom1 . dom2 dom2 dom2 dom2" ". dom3 dom3 dom3 dom3 dom3  . . dom2 dom2 dom2 dom2";
-  grid-gap: 40px; }
+  grid-gap: 2.5rem; }
+  @media only screen and (max-width: 1199.98px) {
+    .project__grid {
+      grid-gap: 1.9rem; } }
+  @media only screen and (max-width: 991.98px) {
+    .project__grid {
+      grid-gap: 0; } }
+  @media only screen and (max-width: 575.98px) {
+    .project__grid {
+      grid-template-rows: repeat(3, min-content);
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-areas: "dom1" "dom2" "dom3"; } }
 
 .project__dom {
   position: relative; }
   .project__dom--1 {
     grid-area: dom1;
     margin-left: 1.5rem; }
+    @media only screen and (max-width: 991.98px) {
+      .project__dom--1 {
+        margin-left: 0; } }
+    @media only screen and (max-width: 575.98px) {
+      .project__dom--1 {
+        margin-left: 0; } }
   .project__dom--2 {
     grid-area: dom2;
     margin-top: 130px; }
+    @media only screen and (max-width: 991.98px) {
+      .project__dom--2 {
+        margin-top: 80px; } }
+    @media only screen and (max-width: 575.98px) {
+      .project__dom--2 {
+        margin-top: 0; } }
   .project__dom--3 {
     grid-area: dom3;
     margin-top: 16px; }
+    @media only screen and (max-width: 575.98px) {
+      .project__dom--3 {
+        margin-top: 0; } }
 
 .project__btn-position {
   position: absolute !important; }
   .project__btn-position--1 {
-    bottom: 4.3rem;
+    bottom: 4.4rem;
     right: 5.5rem;
     z-index: 10; }
     @media only screen and (max-width: 1199.98px) {
       .project__btn-position--1 {
-        bottom: 5.5rem; } }
+        bottom: 6.5rem; } }
+    @media only screen and (max-width: 991.98px) {
+      .project__btn-position--1 {
+        bottom: 5.8rem; } }
+    @media only screen and (max-width: 767.98px) {
+      .project__btn-position--1 {
+        bottom: 5.6rem;
+        right: 4rem; } }
   .project__btn-position--2 {
     bottom: 2rem;
     right: 2rem;
     z-index: 10; }
+    @media only screen and (max-width: 1199.98px) {
+      .project__btn-position--2 {
+        bottom: 1.7rem; } }
+    @media only screen and (max-width: 767.98px) {
+      .project__btn-position--2 {
+        right: 1rem; } }
   .project__btn-position--3 {
-    bottom: 2rem;
+    bottom: 2.1rem;
     left: 22rem;
     z-index: 10; }
     @media only screen and (max-width: 1199.98px) {
       .project__btn-position--3 {
-        bottom: 3rem; } }
+        bottom: 3.9rem; } }
+    @media only screen and (max-width: 767.98px) {
+      .project__btn-position--3 {
+        bottom: 3.7rem;
+        left: 19rem; } }
 
 .project__icon {
   position: relative; }
@@ -206,20 +273,24 @@ body {
   @media only screen and (max-width: 1199.98px) {
     .project__heading-background {
       height: 23px;
-      margin-top: .15rem; } }
+      margin-top: .17rem; } }
+  @media only screen and (max-width: 991.98px) {
+    .project__heading-background {
+      height: 19px;
+      margin-top: .2rem;
+      left: 10.3rem; } }
   .project__heading-background--house {
     left: 3.8rem;
     width: 9rem; }
-
-.valuation__img {
-  height: 21.875rem;
-  width: 100%; }
 
 .valuation__btn {
   position: absolute;
   bottom: -2.8rem;
   left: 7.5rem;
   right: 7.5rem; }
+  @media only screen and (max-width: 767.98px) {
+    .valuation__btn {
+      bottom: -4.8rem; } }
 
 .footer {
   background-color: #2B2220;
@@ -259,8 +330,14 @@ body {
 nav {
   margin: 0 auto;
   background-color: #fff; }
+  nav .navbar-nav {
+    font-family: 'Unica One', cursive; }
   nav .nav-link {
-    position: relative; }
+    position: relative;
+    padding: .3rem 0 .3rem 0 !important; }
+    @media only screen and (max-width: 575.98px) {
+      nav .nav-link {
+        padding: 2rem 0 2rem 0 !important; } }
     nav .nav-link:after {
       position: absolute;
       transition: .3s;
@@ -275,15 +352,19 @@ nav {
       width: 100%;
       left: 0; }
 
-ul {
-  font-family: 'Unica One', cursive; }
-
-.nav-link {
-  text-decoration: none;
-  padding: .3rem 0 .3rem 0 !important; }
-
 .container {
   max-width: 1364px; }
+  @media only screen and (max-width: 575.98px) {
+    .container {
+      padding: 0; } }
 
 .contact__link {
   line-height: 2.5; }
+
+@media only screen and (max-width: 575.98px) {
+  .contact__info {
+    text-align: center; } }
+
+@media only screen and (max-width: 575.98px) {
+  .row {
+    margin: 0; } }
