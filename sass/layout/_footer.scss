@@ -3,6 +3,10 @@
     // padding: 1rem 0;
     font-size: 0.875rem;
     color: $color-grey-dark;
+
+    @include respond(phone-land) {  //width < 767.98px
+        font-size: 1.2rem;
+    }
     
     &__a-link {
         color: $color-grey-dark;

@@ -13,11 +13,11 @@
             grid-gap: 1.9rem;
         }
 
-        @include respond(tab-port) {  //width < 992
-            grid-gap: 0;
-        }
+        // @include respond(tab-port) {  //width < 992
+        //     grid-gap: 0;
+        // }
 
-        @include respond(phone-port) {  //width < 576
+        @include respond(tab-port) {  //width < 992
             grid-template-rows: repeat(3, min-content);
             grid-template-columns: repeat(1, 1fr);
         
@@ -59,7 +59,7 @@
     
         &--3 {
             grid-area: dom3;
-            margin-top: 16px;
+            margin-top: 48px;
 
             @include respond(phone-port) {  //width < 576
                 margin-top: 0;
@@ -71,12 +71,13 @@
         position: absolute !important;
 
         &--1 {
-            bottom: 4.4rem;
+            bottom: 5.9rem;
             right: 5.5rem;
             z-index: 10;
 
             @include respond(tab-land) {  //width < 1200
-                bottom: 6.5rem;
+                bottom: 6rem;
+                right: 1.5rem;
             }
 
             @include respond(tab-port) {  //width < 992
@@ -90,12 +91,13 @@
         }
 
         &--2 {
-            bottom: 2rem;
-            right: 2rem;
+            bottom: 5rem;
+            right: 3rem;
             z-index: 10;
 
             @include respond(tab-land) {  //width < 1200
-                bottom: 1.7rem;
+                bottom: 3.85rem;
+                right: 2rem;
             }
 
             @include respond(tab-port) {  //width < 992
@@ -108,12 +110,13 @@
         }
 
         &--3 {
-            bottom: 2.1rem;
+            bottom: 1.7rem;
             left: 22rem;
             z-index: 10;
 
             @include respond(tab-land) {  //width < 1200
-                bottom: 3.9rem;
+                bottom: 1.9rem;
+                left: 18rem;
             }
 
             // @include respond(tab-port) {  //width < 992
@@ -156,12 +159,11 @@
         height: 30px;
         position: absolute;
         left: 10.35rem;
-        margin-top: .22rem;
+        margin-top: .25rem;
 
 
         @include respond(tab-land) {  //width < 1200
-            height: 23px;
-            margin-top: .17rem;
+            height: 30px;
         }
 
         @include respond(tab-port) {  //width < 992

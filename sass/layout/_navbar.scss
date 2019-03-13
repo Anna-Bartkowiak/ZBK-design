@@ -9,7 +9,11 @@ nav {
     .nav-link {
         position: relative;
         padding: .3rem 0 .3rem 0 !important;
-        // text-decoration: none;
+        line-height: 2.125rem;
+
+        @include respond(phone-land) {  //width < 767.98px
+            font-size: 1.6rem;
+        }
 
         @include respond(phone-port) {  //width < 576
             padding: 2rem 0 2rem 0 !important;

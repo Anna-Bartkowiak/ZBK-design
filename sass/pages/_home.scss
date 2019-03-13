@@ -12,6 +12,11 @@
     }
 
     &__info {
+
+        @include respond(phone-land) {  //width < 767.98px
+            font-size: 1.4rem;
+        }
+        
         @include respond(phone-port) {  //width < 576
             text-align: center;
         }
