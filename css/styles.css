@@ -99,6 +99,11 @@ body {
     @media only screen and (max-width: 575.98px) {
       .heading-primary--grayish-red {
         position: static; } }
+    .heading-primary--grayish-red--valuation {
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0; }
 
 .heading-secondary {
   font-family: 'Unica One', cursive;
@@ -123,7 +128,6 @@ body {
   position: relative;
   font-weight: 300;
   font-size: 1.125rem;
-  background-color: #fff;
   color: #6D6D6D;
   cursor: pointer;
   transition: all .3s; }
@@ -133,6 +137,7 @@ body {
 
 .btn--white {
   border-radius: 50% !important;
+  background-color: #fff;
   font-size: auto;
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -177,6 +182,16 @@ body {
     width: 75%;
     margin: 0 auto 2rem auto; } }
 
+@media only screen and (max-width: 991.98px) {
+  .form-group__valuation {
+    width: 75%;
+    margin: 0 auto 2rem auto; } }
+
+@media only screen and (max-width: 767.98px) {
+  .form-group__valuation {
+    width: 80%;
+    margin: 0 auto 2rem auto; } }
+
 .form-control {
   width: 92%;
   font-size: .875rem;
@@ -191,6 +206,79 @@ body {
       width: 100%;
       margin: 0 auto;
       padding: 1.5rem 0.625rem; } }
+  .form-control__valuation {
+    width: 85%; }
+    @media only screen and (max-width: 991.98px) {
+      .form-control__valuation {
+        width: 65%;
+        margin: auto; } }
+    @media only screen and (max-width: 767.98px) {
+      .form-control__valuation {
+        width: 80%;
+        margin: auto; } }
+
+.project-carousel {
+  font-weight: 300; }
+  .project-carousel__caption {
+    font-size: 1.5rem;
+    color: #6D6D6D;
+    bottom: -5rem;
+    z-index: 1; }
+
+.carousel-control-next, .carousel-control-prev {
+  border: 0; }
+
+@media (min-width: 768px) {
+  /* show 3 items */
+  .carousel-inner .active,
+  .carousel-inner .active + .carousel-item,
+  .carousel-inner .active + .carousel-item + .carousel-item,
+  .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+    display: block; }
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+    transition: none; }
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    position: relative;
+    transform: translate3d(0, 0, 0); }
+  .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -25%;
+    z-index: -1;
+    display: block;
+    visibility: visible; }
+  /* left or forward direction */
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible; }
+  /* farthest right hidden item must be abso position for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible; }
+  /* right or prev direction */
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible; } }
 
 .project__grid {
   display: grid;
@@ -312,6 +400,45 @@ body {
     left: 3.8rem;
     width: 9rem; }
 
+.project-1__grid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: "dom1 dom1 dom1 dom1 dom1 . dom2 dom2 dom2 dom2 dom2 dom2" "dom1 dom1 dom1 dom1 dom1 . dom3 dom3 dom3 dom3 . .";
+  grid-gap: 2.5rem; }
+  @media only screen and (max-width: 1199.98px) {
+    .project-1__grid {
+      grid-gap: 1.9rem; } }
+  @media only screen and (max-width: 991.98px) {
+    .project-1__grid {
+      grid-template-rows: repeat(3, min-content);
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-areas: "dom1" "dom2" "dom3"; } }
+
+.project-1__dom {
+  position: relative; }
+  .project-1__dom--1 {
+    grid-area: dom1;
+    margin-left: 1.5rem; }
+    @media only screen and (max-width: 991.98px) {
+      .project-1__dom--1 {
+        margin-left: 0; } }
+    @media only screen and (max-width: 575.98px) {
+      .project-1__dom--1 {
+        margin-left: 0; } }
+  .project-1__dom--2 {
+    grid-area: dom2;
+    margin-top: 70px; }
+    @media only screen and (max-width: 575.98px) {
+      .project-1__dom--2 {
+        margin-top: 0 !important; } }
+  .project-1__dom--3 {
+    grid-area: dom3;
+    margin-top: 70px; }
+    @media only screen and (max-width: 575.98px) {
+      .project-1__dom--3 {
+        margin-top: 0 !important; } }
+
 .valuation__btn {
   position: absolute;
   bottom: -2.8rem;
@@ -363,6 +490,18 @@ body {
     padding: 0 1rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
+  .jumbotron__text-box {
+    width: 41.375rem;
+    position: absolute;
+    bottom: -22%;
+    right: 0;
+    background-color: #fff; }
+    .jumbotron__text-box--font {
+      font-family: 'Unica One', cursive; }
+  .jumbotron__text {
+    width: 29.0625rem;
+    margin: 3rem 5.25rem;
+    border-left: 1px solid #6D6D6D; }
 
 nav {
   margin: 0 auto;
@@ -378,7 +517,8 @@ nav {
         font-size: 1.6rem; } }
     @media only screen and (max-width: 575.98px) {
       nav .nav-link {
-        padding: 2rem 0 2rem 0 !important; } }
+        padding: 2rem 0 2rem 0 !important;
+        margin: 0 10rem; } }
     nav .nav-link:after {
       position: absolute;
       transition: .3s;
@@ -413,3 +553,6 @@ nav {
 @media only screen and (max-width: 575.98px) {
   .row {
     margin: 0; } }
+
+.valuation__img {
+  width: 100%; }

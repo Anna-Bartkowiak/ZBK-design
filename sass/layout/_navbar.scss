@@ -17,6 +17,7 @@ nav {
 
         @include respond(phone-port) {  //width < 576
             padding: 2rem 0 2rem 0 !important;
+            margin: 0 10rem;
         }
 
         &:after {

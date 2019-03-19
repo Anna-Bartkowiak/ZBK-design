@@ -30,4 +30,22 @@
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
     }
+
+    &__text-box {
+        width: 41.375rem;
+        position: absolute;
+        bottom: -22%;
+        right: 0;
+        background-color: $color-white;
+
+        &--font {
+            font-family: 'Unica One', cursive;
+        }
+    }
+
+    &__text {
+        width: 29.0625rem;
+        margin: 3rem 5.25rem;
+        border-left: 1px solid $color-grey-dark;
+    }
 }

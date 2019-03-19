@@ -84,6 +84,13 @@ body {
             position: static;
             // padding: 1rem 3rem;
         }
+
+        &--valuation {
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
     }
 }
 

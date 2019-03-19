@@ -7,7 +7,7 @@
         position: relative;
         font-weight: 300;
         font-size: 1.125rem;
-        background-color: $color-white;
+        // background-color: $color-white;
         color: $color-grey-dark;
         cursor: pointer;
         transition: all .3s;
@@ -21,6 +21,7 @@
 
     &--white {
         border-radius: 50% !important;
+        background-color: $color-white;
         font-size: auto;
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba($color-black, .2);

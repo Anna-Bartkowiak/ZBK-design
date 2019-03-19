@@ -115,6 +115,18 @@
         width: 75%;
         margin: 0 auto 2rem auto;
     }
+
+    &__valuation {
+        @include respond(tab-port) {  //width < 991.98px
+            width: 75%;
+            margin: 0 auto 2rem auto;
+        }
+
+        @include respond(phone-land) {  //width < 767.98px
+            width: 80%;
+            margin: 0 auto 2rem auto;
+        }
+    }
 }
 
 .form-control {
@@ -132,5 +144,19 @@
         width: 100%;
         margin: 0 auto;
         padding: 1.5rem 0.625rem;
+    }
+
+    &__valuation {
+        width: 85%;
+
+        @include respond(tab-port) {  //width < 991.98px
+            width: 65%;
+            margin: auto;
+        }
+
+        @include respond(phone-land) {  //width < 767.98px
+            width: 80%;
+            margin: auto;
+        }
     }
 }
