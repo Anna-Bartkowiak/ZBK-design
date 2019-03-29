@@ -80,6 +80,7 @@
         @include respond(phone-land) {  //width < 768
             padding-left: 8rem!important;
             padding-right: 8rem!important;
+            font-size: 1.6rem!important;
         }
     }
 }

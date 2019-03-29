@@ -17,7 +17,11 @@
         <header class="header">
             <nav class="container navbar navbar-expand-sm fixed-top navbar-light">
                 <a class="navbar-brand p-3 p-sm-1 mr-5" href="#">
-                    <img srcset="/img/zbk_design_logo_horizontal copy.png 1x, /img/zbk_design_logo_horizontal copy@2x.png 2x" class="img-fluid" alt="logo ZBK design">
+                    <picture class="img-fluid">
+                        <source srcset="img/zbk_design_logo_horizontal_copy@05x.png"
+                                media="(max-width:991.98px)">
+                        <img srcset="/img/zbk_design_logo_horizontal_copy.png 1x, /img/zbk_design_logo_horizontal_copy@2x.png 2x" class="img-fluid" alt="logo ZBK design" src="/img/zbk_design_logo_horizontal_copy.png">
+                    </picture>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -59,23 +63,47 @@
         <main>
             <section id="project" class="project pb-sm-5">
                 <div class="container mb-5">
-                    <div class="row project__grid">
-                        <div class="project__dom project__dom--1 mr-5 mr-sm-0 my-5 my-sm-0 pr-5 pr-sm-0">
-                            <img src="img/flat_65m_img1.jpg" class="img-fluid" alt="flat65m2">
-                            <a href="html/project-1.html" role="button" class="btn btn--white p-3 project__btn-position project__btn-position--1"><span class="project__icon">&nbsp;</span></a>
-                            <h3 class="text-uppercase pt-3 heading-primary heading-primary--yellow">mieszkanie<span class="project__heading-background"></span><span class="heading-primary--bold">65m2</span></h3>
+                    <div class="row project__grid mx-sm-3 mx-lg-0">
+                        <div class="project__dom project__dom--1 my-5 my-sm-0">
+                            <picture class="img-fluid">
+                                <source srcset="img/mobile-assets/mieszkanie_65m_cover_HP1.jpg 1x,
+                                        img/mobile-assets/mieszkanie_65m_cover_HP@2x.jpg 2x"
+                                        media="(max-width:767.98px)">
+                                <img srcset="img/flat_65m_img1.jpg 1x, img/flat_65m_img1@2x.jpg 2x" class="img-fluid" alt="flat65m2">
+                            </picture>
+                            <h3 class="text-uppercase pt-3 pl-3 pl-sm-0 heading-primary heading-primary--yellow">mieszkanie
+                                <span class="project__heading-background"></span>
+                                <span class="heading-primary--bold">65m2</span>
+                                <a href="html/project-1.html" role="button" class="btn btn--white p-5 p-md-3 project__btn-position project__btn-position--1"><span class="project__icon">&nbsp;</span></a>
+                            </h3>
                         </div>
                         
-                        <div class="project__dom project__dom--2">
-                            <img src="img/flat_35m_img2.jpg" class="img-fluid" alt="flat35m2">
-                            <a href="html/project-1.html" role="button" class="btn btn--white p-3 project__btn-position project__btn-position--2"><span class="project__icon">&nbsp;</span></a>
-                            <h3 class="text-uppercase pt-3 heading-primary heading-primary--yellow heading-primary--yellow__left">mieszkanie<span class="project__heading-background"></span><span class="heading-primary--bold">35m2</span></h3>
+                        <div class="project__dom project__dom--2 mb-5 mb-sm-0">
+                            <picture class="img-fluid">
+                                <source srcset="img/mobile-assets/mieszkanie_35m_hero.jpg 1x,
+                                        img/mobile-assets/mieszkanie_35m_hero_@2x.jpg 2x"
+                                        media="(max-width:767.98px)">
+                                <img srcset="img/flat_35m_img2.jpg 1x, img/flat_35m_img2@2x.jpg 2x" class="img-fluid" alt="flat65m2">
+                            </picture>
+                            <h3 class="text-uppercase pt-3 pl-3 pl-sm-0 heading-primary heading-primary--yellow heading-primary--yellow__left">mieszkanie
+                                <span class="project__heading-background"></span>
+                                <span class="heading-primary--bold">35m2</span>
+                                <a href="html/project-1.html" role="button" class="btn btn--white p-5 p-md-3 project__btn-position project__btn-position--2"><span class="project__icon">&nbsp;</span></a>
+                            </h3>
                         </div>
                         
                         <div class="project__dom project__dom--3">
-                            <img src="img/house_140m_img1.jpg" class="img-fluid" alt="house140m2">
-                            <a href="html/project-1.html" role="button" class="btn btn--white p-3 project__btn-position project__btn-position--3"><span class="project__icon">&nbsp;</span></a>
-                            <h3 class="text-uppercase pt-3 heading-primary heading-primary--yellow">dom<span class="project__heading-background project__heading-background--house"></span><span class="heading-primary--bold">140m2</span></h3>
+                            <picture class="img-fluid">
+                                <source srcset="img/mobile-assets/dom_140m_cover_hp1.jpg 1x,
+                                        img/mobile-assets/dom_140m_cover_hp@2x.jpg 2x"
+                                        media="(max-width:767.98px)">
+                                <img srcset="img/house_140m_img1.jpg 1x, img/house_140m_img1@2x.jpg 2x" class="img-fluid" alt="house140m2">
+                            </picture>
+                            <h3 class="text-uppercase pt-3 pl-3 pl-sm-0 heading-primary heading-primary--yellow">dom
+                                <span class="project__heading-background project__heading-background--house"></span>
+                                <span class="heading-primary--bold">140m2</span>
+                                <a href="html/project-1.html" role="button" class="btn btn--white p-5 p-md-3 project__btn-position project__btn-position--3"><span class="project__icon">&nbsp;</span></a>
+                            </h3>
                         </div>
                         
                     </div>
@@ -87,7 +115,11 @@
                     <div class="row justify-content-center py-5">
                         <div class="col-md-10 col-lg-8 d-sm-flex">
                             <h3 class="heading-primary heading-primary--grayish-red mb-5 mb-sm-0 bg-white text-uppercase">ciekawi cię ile wyniesie projekt <br>twojego mieszkania?</h3>
-                            <img src="img/img_calculate.jpg" class="img-fluid mx-auto mb-4 mb-sm-0" alt="img-valuation">
+                            <picture>
+                                <source srcset="img/mobile-assets/wycena_hp1.jpg 1x,                         img/mobile-assets/wycena_hp@2x.jpg 2x"
+                                        media="(max-width:575.98px)">
+                                <img srcset="img/img_calculate.jpg 1x, img/img_calculate@2x.jpg 2x" class="img-fluid mx-auto mb-4 mb-sm-0" alt="img-valuation">
+                            </picture>
                             <div class="valuation__btn bg-white d-flex justify-content-center">
                                 <a href="/html/valuation.html" role="button" class="btn btn--gradient btn--form  my-sm-5 my-md-4 mx-auto py-2 px-5 text-uppercase">Oblicz</a>
                             </div>

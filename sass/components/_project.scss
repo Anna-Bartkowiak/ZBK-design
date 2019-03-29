@@ -27,20 +27,24 @@
         }
     }
 
+    picture {
+        position: relative;
+    }
+    
     &__dom {
         position: relative;
 
         &--1 {
             grid-area: dom1;
-            margin-left: 1.5rem;
+            // margin-left: 1.5rem;
 
-            @include respond(tab-port) {  //width < 992
-                margin-left: 0;
-            }
+            // @include respond(tab-port) {  //width < 992
+            //     margin-left: 0;
+            // }
 
-            @include respond(phone-port) {  //width < 576
-                margin-left: 0;
-            }
+            // @include respond(phone-port) {  //width < 576
+            //     margin-left: 0;
+            // }
         }
     
         &--2 {
@@ -49,7 +53,8 @@
             // margin-left: -.7rem;
             
             @include respond(tab-port) {  //width < 992
-                margin-top: 80px;
+                margin-top: 48px;
+                margin-left: auto;
             }
 
             @include respond(phone-port) {  //width < 576
@@ -61,6 +66,10 @@
             grid-area: dom3;
             margin-top: 48px;
 
+            @include respond(tab-port) {  //width < 992
+                margin-top: 48px;
+            }
+
             @include respond(phone-port) {  //width < 576
                 margin-top: 0;
             }
@@ -71,61 +80,35 @@
         position: absolute !important;
 
         &--1 {
-            bottom: 5.9rem;
-            right: 5.5rem;
+            bottom: 1.4rem;
+            left: 19rem;
             z-index: 10;
-
-            @include respond(tab-land) {  //width < 1200
-                bottom: 6rem;
-                right: 1.5rem;
-            }
-
-            @include respond(tab-port) {  //width < 992
-                bottom: 5.8rem;
-            }
     
             @include respond(phone-land) {  //width < 768
-                bottom: 5.6rem;
-                right: 4rem;
+                bottom: 22rem;
+                left: 26.8rem;
             }
         }
 
         &--2 {
-            bottom: 5rem;
-            right: 3rem;
+            bottom: 1.4rem;
+            left: 19rem;
             z-index: 10;
-
-            @include respond(tab-land) {  //width < 1200
-                bottom: 3.85rem;
-                right: 2rem;
-            }
-
-            @include respond(tab-port) {  //width < 992
-                
-            }
     
             @include respond(phone-land) {  //width < 768
-                right: 1rem;
+                bottom: 10.5rem;
+                left: 1.2rem;
             }
         }
 
         &--3 {
-            bottom: 1.7rem;
-            left: 22rem;
+            bottom: 1.4rem;
+            left: 14rem;
             z-index: 10;
 
-            @include respond(tab-land) {  //width < 1200
-                bottom: 1.9rem;
-                left: 18rem;
-            }
-
-            // @include respond(tab-port) {  //width < 992
-            //     bottom: 4rem;
-            // }
-    
             @include respond(phone-land) {  //width < 768
-                bottom: 3.7rem;
-                left: 19rem;
+                    bottom: 10.5rem;
+                    left: 27.3rem;
             }
         }
     }
@@ -167,14 +150,32 @@
         }
 
         @include respond(tab-port) {  //width < 992
-            height: 19px;
-            margin-top: .2rem;
+            height: 30px;
             left: 10.3rem;
+        }
+
+        @include respond(phone-land) {  //width < 768
+            margin-top: .4rem;
+            left: 16rem;
+            width: 11.5rem;
+        }
+
+        @include respond(phone-port) {  //width < 576
+            left: 17rem;
         }
 
         &--house {
             left: 3.8rem;
             width: 9rem;
+
+            @include respond(phone-land) {  //width < 768
+                width: 13.5rem;
+                left: 6rem;
+            }
+
+            @include respond(phone-port) {  //width < 576
+                left: 7rem;
+            }
         }
     }
 }

@@ -61,17 +61,27 @@ body {
     font-weight: 300;
     line-height: 1;
     position: relative; }
+    @media only screen and (max-width: 767.98px) {
+      .heading-primary--yellow {
+        font-size: 3.6rem; } }
     .heading-primary--yellow__left {
       left: -3rem; }
       @media only screen and (max-width: 1199.98px) {
         .heading-primary--yellow__left {
           left: -5rem; } }
+      @media only screen and (max-width: 767.98px) {
+        .heading-primary--yellow__left {
+          padding: 0; } }
   .heading-primary--bold {
     font-weight: 700;
     color: #6D6D6D;
     padding: 0 1rem;
     position: absolute;
     bottom: -0.9rem; }
+    @media only screen and (max-width: 767.98px) {
+      .heading-primary--bold {
+        padding: 0 1.3rem;
+        bottom: -1.3rem; } }
   .heading-primary--grayish-red {
     padding: 1rem;
     line-height: 1.5;
@@ -171,7 +181,8 @@ body {
 @media only screen and (max-width: 767.98px) {
   .btn--form {
     padding-left: 8rem !important;
-    padding-right: 8rem !important; } }
+    padding-right: 8rem !important;
+    font-size: 1.6rem !important; } }
 
 @media only screen and (max-width: 767.98px) {
   .form-group {
@@ -295,29 +306,29 @@ body {
       grid-template-columns: repeat(1, 1fr);
       grid-template-areas: "dom1" "dom2" "dom3"; } }
 
+.project picture {
+  position: relative; }
+
 .project__dom {
   position: relative; }
   .project__dom--1 {
-    grid-area: dom1;
-    margin-left: 1.5rem; }
-    @media only screen and (max-width: 991.98px) {
-      .project__dom--1 {
-        margin-left: 0; } }
-    @media only screen and (max-width: 575.98px) {
-      .project__dom--1 {
-        margin-left: 0; } }
+    grid-area: dom1; }
   .project__dom--2 {
     grid-area: dom2;
     margin-top: 130px; }
     @media only screen and (max-width: 991.98px) {
       .project__dom--2 {
-        margin-top: 80px; } }
+        margin-top: 48px;
+        margin-left: auto; } }
     @media only screen and (max-width: 575.98px) {
       .project__dom--2 {
         margin-top: 0; } }
   .project__dom--3 {
     grid-area: dom3;
     margin-top: 48px; }
+    @media only screen and (max-width: 991.98px) {
+      .project__dom--3 {
+        margin-top: 48px; } }
     @media only screen and (max-width: 575.98px) {
       .project__dom--3 {
         margin-top: 0; } }
@@ -325,43 +336,29 @@ body {
 .project__btn-position {
   position: absolute !important; }
   .project__btn-position--1 {
-    bottom: 5.9rem;
-    right: 5.5rem;
+    bottom: 1.4rem;
+    left: 19rem;
     z-index: 10; }
-    @media only screen and (max-width: 1199.98px) {
-      .project__btn-position--1 {
-        bottom: 6rem;
-        right: 1.5rem; } }
-    @media only screen and (max-width: 991.98px) {
-      .project__btn-position--1 {
-        bottom: 5.8rem; } }
     @media only screen and (max-width: 767.98px) {
       .project__btn-position--1 {
-        bottom: 5.6rem;
-        right: 4rem; } }
+        bottom: 22rem;
+        left: 26.8rem; } }
   .project__btn-position--2 {
-    bottom: 5rem;
-    right: 3rem;
+    bottom: 1.4rem;
+    left: 19rem;
     z-index: 10; }
-    @media only screen and (max-width: 1199.98px) {
-      .project__btn-position--2 {
-        bottom: 3.85rem;
-        right: 2rem; } }
     @media only screen and (max-width: 767.98px) {
       .project__btn-position--2 {
-        right: 1rem; } }
+        bottom: 10.5rem;
+        left: 1.2rem; } }
   .project__btn-position--3 {
-    bottom: 1.7rem;
-    left: 22rem;
+    bottom: 1.4rem;
+    left: 14rem;
     z-index: 10; }
-    @media only screen and (max-width: 1199.98px) {
-      .project__btn-position--3 {
-        bottom: 1.9rem;
-        left: 18rem; } }
     @media only screen and (max-width: 767.98px) {
       .project__btn-position--3 {
-        bottom: 3.7rem;
-        left: 19rem; } }
+        bottom: 10.5rem;
+        left: 27.3rem; } }
 
 .project__icon {
   position: relative; }
@@ -393,12 +390,26 @@ body {
       height: 30px; } }
   @media only screen and (max-width: 991.98px) {
     .project__heading-background {
-      height: 19px;
-      margin-top: .2rem;
+      height: 30px;
       left: 10.3rem; } }
+  @media only screen and (max-width: 767.98px) {
+    .project__heading-background {
+      margin-top: .4rem;
+      left: 16rem;
+      width: 11.5rem; } }
+  @media only screen and (max-width: 575.98px) {
+    .project__heading-background {
+      left: 17rem; } }
   .project__heading-background--house {
     left: 3.8rem;
     width: 9rem; }
+    @media only screen and (max-width: 767.98px) {
+      .project__heading-background--house {
+        width: 13.5rem;
+        left: 6rem; } }
+    @media only screen and (max-width: 575.98px) {
+      .project__heading-background--house {
+        left: 7rem; } }
 
 .project-1__grid {
   display: grid;
@@ -471,7 +482,11 @@ body {
   padding: 0 2rem 0 2rem;
   margin-top: 4.875rem;
   margin-bottom: 7rem;
-  background: url(../img/flat_35m_img1.jpg) center center no-repeat; }
+  background: url(../img/flat_35m_img1.jpg) center center no-repeat;
+  border-radius: 0; }
+  @media only screen and (max-width: 991.98px) {
+    .jumbotron {
+      margin-top: 3.875rem; } }
   .jumbotron__box {
     position: absolute;
     top: 22%;
@@ -544,7 +559,7 @@ nav {
 
 @media only screen and (max-width: 767.98px) {
   .contact__info {
-    font-size: 1.4rem; } }
+    font-size: 1.6rem; } }
 
 @media only screen and (max-width: 575.98px) {
   .contact__info {

@@ -14,7 +14,7 @@
     &__info {
 
         @include respond(phone-land) {  //width < 767.98px
-            font-size: 1.4rem;
+            font-size: 1.6rem;
         }
         
         @include respond(phone-port) {  //width < 576

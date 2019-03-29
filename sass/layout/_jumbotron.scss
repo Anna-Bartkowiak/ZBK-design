@@ -5,6 +5,11 @@
     margin-top: 4.875rem;
     margin-bottom: 7rem;
     background: url(../img/flat_35m_img1.jpg) center center no-repeat;
+    border-radius: 0;
+
+    @include respond(tab-port) {  //width < 991.98px
+        margin-top: 3.875rem;
+    }
 
     &__box {
         position: absolute;
