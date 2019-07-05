@@ -17,10 +17,17 @@
         <header class="header">
             <nav class="container navbar navbar-expand-sm fixed-top navbar-light">
                 <a class="navbar-brand p-3 p-sm-1 mr-5" href="#">
-                    <img srcset="../img/zbk_design_logo_horizontal_copy.png 1x, ../img/zbk_design_logo_horizontal_copy@2x.png 2x" class="img-fluid" alt="logo ZBK design">
+                    <picture class="img-fluid">
+                        <source srcset="../img/zbk_design_logo_horizontal_copy@05x.png"
+                                media="(max-width:991.98px)">
+                        <img srcset="../img/zbk_design_logo_horizontal_copy.png 1x, ../img/zbk_design_logo_horizontal_copy@2x.png 2x" class="img-fluid" alt="logo ZBK design" src="../img/zbk_design_logo_horizontal_copy.png">
+                    </picture>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+
+                <button class="navbar-toggler hamburger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="hamburger__container" tabindex="-1">
+                        <span class="hamburger__bars"></span>
+                    </span>
                 </button>
                 
                 <div class="collapse ml-sm-2 text-center navbar-collapse" id="navbarSupportedContent">
@@ -29,7 +36,7 @@
                             <a class="nav-link" href="../index.html">&lang; Strona główna<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item mr-sm-4">
-                            <a class="nav-link" href="#valuation">Wycena</a>
+                            <a class="nav-link" href="./project-1.html">Projekty</a>
                         </li>
                         <li class="nav-item mr-sm-4">
                             <a class="nav-link" href="#contact">Kontakt</a>
@@ -106,7 +113,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="phone">Telefon</label>
-                                    <input type="password" class="form-control rounded-0" id="phone">
+                                    <input type="number" class="form-control rounded-0" id="phone">
                                 </div>
                                 <div class="form-group">
                                     <label for="message">Wiadomość</label>
@@ -135,5 +142,6 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="../js/menu-anim.js"></script>
     </body>
 </html>

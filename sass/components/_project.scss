@@ -157,7 +157,7 @@
         @include respond(phone-land) {  //width < 768
             margin-top: .4rem;
             left: 16rem;
-            width: 11.5rem;
+            width: 10.7rem;
         }
 
         @include respond(phone-port) {  //width < 576
@@ -169,7 +169,7 @@
             width: 9rem;
 
             @include respond(phone-land) {  //width < 768
-                width: 13.5rem;
+                width: 13rem;
                 left: 6rem;
             }
 
@@ -199,13 +199,15 @@
         //     grid-gap: 0;
         // }
 
-        @include respond(tab-port) {  //width < 992
+        @include respond(phone-land) {  //width < 767.98px
             grid-template-rows: repeat(3, min-content);
             grid-template-columns: repeat(1, 1fr);
         
-            grid-template-areas: "dom1"
-                                "dom2"
+            grid-template-areas: "dom2"
+                                "dom1"
                                 "dom3";
+
+            grid-gap: 7.2rem;
         }
     }
 
@@ -242,6 +244,10 @@
         &--3 {
             grid-area: dom3;
             margin-top: 70px;
+
+            @include respond(phone-land) {  //width < 767.98px
+                margin-top: 0px;
+            }
 
             @include respond(phone-port) {  //width < 576
                 margin-top: 0!important;

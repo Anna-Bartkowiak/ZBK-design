@@ -4,11 +4,16 @@
     padding: 0 2rem 0 2rem;
     margin-top: 4.875rem;
     margin-bottom: 7rem;
-    background: url(../img/flat_35m_img1.jpg) center center no-repeat;
+    background: url(../../img/flat_35m_img1.jpg) center center no-repeat;
     border-radius: 0;
 
     @include respond(tab-port) {  //width < 991.98px
         margin-top: 3.875rem;
+    }
+
+    @include respond(phone-land) {  //width < 576
+        height: 51.5rem;
+        // background: url(../../img/mobile-assets/mobile_hero_HP.jpg) right no-repeat;
     }
 
     &__box {
@@ -46,11 +51,46 @@
         &--font {
             font-family: 'Unica One', cursive;
         }
+
+        @include respond(tab-port) {  //width < 991.98px
+            width: 35rem;
+            bottom: -18%;
+        }
+
+        @include respond(phone-land) {  //width < 767.98px
+            width: 30rem;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+        }
+
+        @include respond(phone-port) {  //width < 767.98px
+            width: 27.8rem;
+        }
     }
 
     &__text {
         width: 29.0625rem;
         margin: 3rem 5.25rem;
         border-left: 1px solid $color-grey-dark;
+
+        @include respond(tab-port) {  //width < 991.98px
+            width: 25rem;
+            margin: 3rem 5.25rem;
+            // font-size: .85rem;
+        }
+
+        @include respond(phone-land) {  //width < 767.98px
+            width: 23rem;
+            margin: 2.5rem 3.5rem;
+            font-size: 1.4rem;
+            border-left: 0px;
+        }
+
+        @include respond(phone-port) {  //width < 767.98px
+            width: 25rem;
+            margin: 2rem;
+            border-left: 0px;
+        }
     }
 }
