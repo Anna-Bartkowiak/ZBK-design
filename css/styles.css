@@ -511,6 +511,12 @@ body {
     padding: 0 1rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
+  @media only screen and (max-width: 767.98px) {
+    .jumbotron__project {
+      margin-bottom: 0px; } }
+  @media only screen and (max-width: 575.98px) {
+    .jumbotron__project {
+      margin-bottom: 15rem; } }
   .jumbotron__text-box {
     width: 41.375rem;
     position: absolute;
@@ -526,12 +532,15 @@ body {
     @media only screen and (max-width: 767.98px) {
       .jumbotron__text-box {
         width: 30rem;
+        top: 73%;
+        left: 50%;
+        transform: translate(-50%, -85%); } }
+    @media only screen and (max-width: 575.98px) {
+      .jumbotron__text-box {
+        width: 27.8rem;
         top: 75%;
         left: 50%;
         transform: translate(-50%, 0%); } }
-    @media only screen and (max-width: 575.98px) {
-      .jumbotron__text-box {
-        width: 27.8rem; } }
   .jumbotron__text {
     width: 29.0625rem;
     margin: 3rem 5.25rem;
